@@ -53,7 +53,7 @@ func (*CsvReader) ReadData() (map[Ticket][]Operation, error) {
 
 		result[t] = append(result[t], Operation{
 			Ticket: t,
-			Value:  int(v * 100),
+			Value:  int(v),
 			Data:   d,
 			Amount: a,
 		})

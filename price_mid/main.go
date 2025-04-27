@@ -25,7 +25,14 @@ func main() {
 
 		midPrice := (totalValue / totalAmount)
 
-		fmt.Printf("Ticket: %s -> %d \n", ticket, midPrice)
+		fmt.Printf(
+			"Ticket: %s -> %d AÇÕES DE %s. ADIQUIRIDAS A UM PREÇO MÉDIO DE R$ %d | Total %d \n",
+			ticket,
+			totalAmount,
+			ticket,
+			midPrice,
+			totalValue,
+		)
 	}
 
 }
